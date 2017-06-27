@@ -1,0 +1,346 @@
+---
+title: "The Reproducibility Crisis in Psychology & Neuroscience"
+author: "Rick O. Gilmore"
+email: rogilmore@psu.edu
+date: "`r Sys.time()`"
+output: 
+  revealjs::revealjs_presentation:
+    self_contained: false
+    lib_dir: libs
+    incremental: false
+    theme: simple
+    transition: default
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Preliminaries
+
+## Bio
+
+- B.A., Cognitive Science, Brown University
+- M.S. & Ph.D., Psychology (Cognitive Neuroscience), Carnegie Mellon University
+- Human brain development, perception & action, computational modeling, machine vision, big data, open science
+- co-director/founder of [Databrary.org](http://databrary.org)
+- banjo player, actor, cyclist, backpacker, poet, ham (K3ROG), native Coloradoan
+- [gilmore-lab.github.io](http://gilmore-lab.github.io)
+
+## Acknowledgments
+
+- [Karen Adolph (NYU)]()
+- NSF, NICHD, LEGO Foundation, Society for Research in Child Development
+
+## Roadmap
+
+- There's something happening here...
+- Reproducibility in Psychology
+- Reproducibility in Neuroscience
+- Toward a better future
+
+# Pop quiz
+
+## Is there a reproducibility crisis?
+
+>- Yes, a significant crisis.
+>- Yes, a slight crisis.
+>- No, there is no crisis.
+>- Don't know.
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=450px>
+<img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=450px>
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+## Have you ever failed to reproduce an experiment?
+
+>- Someone else's
+>- My own
+
+## Have you ever tried to publish a reproduction attempt?
+
+>- Published
+>- Failed to publish
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+## What factors contribute to irreproducible research?
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg">
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+## Solvable problems
+
+- Selective reporting
+- *Pressure to publish*
+- Low power
+- Replication in original labs
+- Mentoring/oversight
+- Methods, code, data unavailable
+- Poor design
+- Fraud
+- Insufficient peer review
+- Variability of reagents
+- *Bad luck*
+
+---
+
+<div class="centered">
+<a href="https://www.amazon.com/Rigor-Mortis-Science-Worthless-Billions/dp/0465097901"><img src="https://images-na.ssl-images-amazon.com/images/I/51PjoYQf1jL._SX327_BO1,204,203,200_.jpg">
+</a>
+</div>
+
+# Reproducibility in Psychology
+
+---
+
+<div class="centered">
+<a href="http://press.princeton.edu/titles/10970.html">
+<img src="http://press.princeton.edu/images/j10970.gif" height=480px>
+</a>
+</div>
+
+## Psychology is harder than physics
+
+## Sampling is biased
+
+- Much (lab-based) data collected are from **W**estern, **E**ducated **I**ndustrialized, **R**ich, **D**emocratic (WEIRD) populations [[@henrich_weirdest_2010]](http://doi.org/10.1017/S0140525X0999152X)
+- Even on [Mechanical Turk](http://www.behind-the-enemy-lines.com/2015/04/demographics-of-mechanical-turk-now.html)
+
+---
+
+<div class="centered">
+<img src="http://2.bp.blogspot.com/-oHtEYvTo2yg/VSLSom0-ceI/AAAAAAADQcM/CWV-eGqvLhw/s1600/hh-income.PNG">
+
+<img src="http://2.bp.blogspot.com/--0AEM5IEPLo/VSLSohy8qtI/AAAAAAADQcI/UErSy-VIvk0/s1600/countries.PNG">
+
+See also: <http://demographics.mturk-tracker.com/>
+</div>
+
+## Studies are underpowered
+
+- Maxwell, S. E. (2004). The Persistence of Underpowered Studies in Psychological Research: Causes, Consequences, and Remedies. *Psychological Methods*, 9(2), 147–163. <https://doi.org/10.1037/1082-989X.9.2.147>
+- Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. *PLOS Medicine*, 2(8), e124. <https://doi.org/10.1371/journal.pmed.0020124>
+
+## Data sharing is not universal practice
+
+- Even **after** a publication has gone to press
+- Despite implicit agreement to do so if publishing in certain journals (e.g., American Psychological Association)
+
+## & hasn't improved over time...
+
+<div class="centered">
+```{r vanpaemel-et-al-data, echo=FALSE, warning=FALSE, message=FALSE}
+# http://collabra.org/articles/10.1525/collabra.13/download/table/T1?type=csv
+sharing.dat <- read.csv(file = "10.1525-collabra.13_T1.csv")
+library(ggplot2)
+library(dplyr)
+sharing.dat %>% 
+  ggplot() + 
+  geom_col(mapping = aes(x=Journal, 
+                         y=Proportion, 
+                         fill=Response))
+```
+
+[[@vanpaemel_are_2015]](http://doi.org/10.1525/collabra.13)
+
+*American Psychologist*, *70*(6), Sept 2015
+</div>
+
+## Data are sensitive, hard(er) to share
+
+## Reproducibility "Crisis"
+
+- [Reproducibility Project: Psychology](https://osf.io/ezcuj/)
+- Attempt to replicate 100 experimental and correlational studies published in three psychology journals in 2008 using high-powered designs and original materials when available. 
+- Materials, data, protocols, analysis code shared via the [Open Science Framework (OSF)](http://osf.io) from the [Center for Open Science (COS)](http://cos.io)
+
+## Results published in [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+
+- 39/98 (39.7%) replication attempts were successful
+- 97% of original studies reported statistically significant results vs. 36% of replications
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/replication-effect-size.jpg" height=500px>
+
+[[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+</div>
+
+## So, did the studies replicate? [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+
+- Samples not equal
+    + Sampling error differences predicts < 100% reproducibility
+
+## So, did the studies replicate? [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+
+- Protocols not identical
+    + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
+    + What is CI of *expected* effect sizes given sample/methodological variability? [Many Labs project](https://osf.io/wx7ck/wiki/home/)
+    
+---
+
+<div class="centered">
+<img src="https://mfr.osf.io/export?url=https://osf.io/5mxby/?action=download%26direct%26mode=render&initialWidth=828&childId=mfrIframe&format=1200x1200.jpeg">
+
+[Many Labs project](https://osf.io/wx7ck/wiki/home/)
+</div>
+
+## So, did the studies replicate? [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+    
+[[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
+
+# Reproducibility in Neuroscience
+
+---
+
+# Toward a better future
+
+## Tools for openness and transparency
+
+- Open Science Framework (OSF)
+    - Reproducibility Project
+    - Pre-registration Challenges
+    
+## Changing journal, funder practices
+
+- [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/)
+- [[@nosek_promoting_2015]](http://doi.org/10.1126/science.aab2374)
+
+## [[@munafo_manifesto_2017]](http://doi.org/10.1038/s41562-016-0021) manifesto
+
+<div class="centered">
+<a href="http://www.nature.com/articles/s41562-016-0021/figures/1">
+<img src="http://www.nature.com/article-assets/npg/nathumbehav/2017/s41562-016-0021/images_hires/w926/s41562-016-0021-f1.jpg" height=500px>
+</a>
+</div>
+
+## Improving methodology training
+
+- [Literate Programming](http://www.literateprogramming.com/)
+    - [RStudio](http://rstudio.com) and [R Markdown](http://rmarkdown.rstudio.com/)
+    - [Jupyter](http://jupyter.org) notebooks
+    - Electronic lab notebooks, talks, reports, articles...
+- [Software Carpentry](https://software-carpentry.org/)
+- Version control (e.g., GitHub)
+
+## Data publication
+
+- Nature Scientific Data
+    - Gilmore on editorial board
+
+## Video can improve reproducibility
+
+*If extreme athletes can use self-mounted cameras to record their wildest adventures during mountaintop blizzards, scientists have little excuse not to record what goes on in lab and field studies."* -- [Clark, T.D. (2017, February 7). Science, lies, and video-taped experiments. *Nature*, *542*(7640).](http://www.nature.com/news/science-lies-and-video-taped-experiments-1.21432)
+
+## Toward a databservatory...
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg" height=450px>
+</div>
+
+---
+
+<div class="centered">
+<a href="https://en.wikipedia.org/wiki/Hubble_Ultra-Deep_Field">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg" height=500px>
+</a>
+</div>
+
+<div class="notes">
+The Hubble Ultra Deep Field. Taken over 3.5 months in 2003-04. Contains an estimated 10,000 galaxies, and because time and space collapse at astronomical distances, looks back ~13 billion years, or 400-800 years before the big bang.
+</div>
+
+## The Human Project
+
+<div class="centered">
+<a href="http://www.thehumanproject.org">
+<img src="img/thehumanproject.org.jpg" height=480px>
+</a>
+</div>
+
+<https://www.nytimes.com/2017/06/04/nyregion/human-project-new-york-city-study.html>
+
+## Open Humans
+
+<div class="centered">
+<a href="http://www.openhumans.org">
+<img src="img/openhumans.org.jpg" height=480px>
+</a>
+</div>
+
+## [Neurosynth.org](http://neurosynth.org)
+
+<div class="centered">
+<video width="720" height="450" controls>
+  <source src="mov/neurosynth-happy.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+## [Social Data Explorer](http://www.socialexplorer.com/)
+
+<div class="centered">
+<a href="http://www.socialexplorer.com/">
+<div class="centered">
+<img src="img/social-explorer.jpg" height=450px>
+</div>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<video width="720" height="450" controls>
+  <source src="mov/social-data-explorer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+## [WordBank](http://wordbank.stanford.edu)
+
+<div class="centered">
+<video width="720" height="450" controls>
+  <source src="mov/wordbank-vocabulary.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+# Thank you & good luck this week
+
+## Stack
+
+This talk was produced in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the reveal.JS framework. The code used to generate the slides may be found at <https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/>. Information about the R Session that produced the code is as follows:
+
+```{r session-info}
+sessionInfo()
+```
+
+## References
+
+
