@@ -26,21 +26,25 @@ knitr::opts_chunk$set(echo = FALSE)
 - B.A., Cognitive Science, Brown University
 - M.S. & Ph.D., Psychology (Cognitive Neuroscience), Carnegie Mellon University
 - Human brain development, perception & action, computational modeling, machine vision, big data, open science
-- co-director/founder of [Databrary.org](http://databrary.org)
+- founding Director of Human Imaging, [Penn State Social, Life & Engineering Sciences Imaging Center (SLEIC)](http://imaging.psu.edu)
+- Co-Founder/Co-Director of [Databrary.org](http://databrary.org) data library
 - banjo player, actor, cyclist, backpacker, poet, ham (K3ROG), native Coloradoan
 - [gilmore-lab.github.io](http://gilmore-lab.github.io)
 
 ## Acknowledgments
 
 - [Karen Adolph (NYU)]()
-- NSF, NICHD, LEGO Foundation, Society for Research in Child Development
+- LEGO Foundation, Society for Research in Child Development
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" width=150px>
+<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" width=150px>
 
 ## Roadmap
 
-- There's something happening here...
+- There's something happening here; what it is ain't exactly clear...
 - Reproducibility in Psychology
 - Reproducibility in Neuroscience
-- Toward a better future
+- A better future
 
 # Pop quiz
 
@@ -126,6 +130,29 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Psychology is harder than physics
 
+---
+
+<div class="centered">
+<img src="img/psych-harder-1.jpg" width=800px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/psych-harder-2.jpg" width=800px/>
+</div>
+
+## Behavior has multiple, nested dimensions
+
+<div class="centered">
+<video width="600" height="400" controls>
+  <source src="https://nyu.databrary.org/slot/11652/307774,376273/asset/47075/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2016). PLAY Project: Webinar discussions on protocol and coding. Databrary. Retrieved February 17, 2017 from <https://nyu.databrary.org/volume/232>
+
 ## Sampling is biased
 
 - Much (lab-based) data collected are from **W**estern, **E**ducated **I**ndustrialized, **R**ich, **D**emocratic (WEIRD) populations [[@henrich_weirdest_2010]](http://doi.org/10.1017/S0140525X0999152X)
@@ -173,6 +200,71 @@ sharing.dat %>%
 
 ## Data are sensitive, hard(er) to share
 
+## Fraud
+
+- [Michael LaCour](http://www.nature.com/news/political-science-s-problem-with-research-ethics-1.17866)
+    - Broockman, D., Kalla, J., Aronow, P. (2015, May 19). Irregularities in LaCour (2014). Retrieved February 16, 2017 from <http://stanford.edu/~dbroock/broockman_kalla_aronow_lg_irregularities.pdf>
+- [Diederik Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
+    - [Commentary](http://root.bryancavemedia.com/marketing/downloads/schooled_in_fraud_compliance_lessons_from_lying_dutchman_killingsworth.pdf)
+    
+## Michael LaCour
+
+<div class="centered">
+<a href="http://science.sciencemag.org/content/348/6239/1100.2">
+<img src="img/lacour-green.jpg" height=450px/>
+</a>
+</div>
+
+## Diederik Stapel
+
+- Dean of the School of Social and Behavioral Sciences at Tilburg University
+- Teacher of Scientific Ethics course
+- Fraud investigation launched when 3 grad students noticed anomalies -- duplicate entries in data tables
+- Stapel confessed, lost position, gave up Ph.D., wrote a book
+- Details in [Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
+
+## Self-reported data fabrication, falsification, and alteration
+
+<div class="centered">
+<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0005738">
+<img src="http://journals.plos.org/plosone/article/figure/image?size=medium&id=info:doi/10.1371/journal.pone.0005738.g002" height=350px/>
+</a>
+
+[[@fanelli_how_2009]](https://doi.org/10.1371/journal.pone.0005738)
+</div>
+
+## Self-reports of questionable research practices
+
+<div class="centered">
+<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0005738">
+<img src="http://journals.plos.org/plosone/article/figure/image?size=medium&id=info:doi/10.1371/journal.pone.0005738.g003" height=350px/>
+</a>
+
+[[@fanelli_how_2009]](https://doi.org/10.1371/journal.pone.0005738)
+</div>
+
+## Marc Hauser
+
+- Evolutionary/Comparative Psychologist, Professor at Harvard
+- Resigned 2011 after internal investigation found him responsible for research misconduct
+- Details see [2012 report by NIH Office of Research Integrity (ORI)](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html) and [Hauser's response](http://archive.boston.com/whitecoatnotes/2012/09/05/marc-hauser-responds-federal-finding-scientific-misconduct/spzRWEVIPKA4BUu8wi8t8J/story.html). 
+
+## Mistakes, e.g., flexible "stopping" rules
+
+<div class="centered">
+<a href="">
+<img src="http://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/pssa/2011/pssa_22_11/0956797611417632/20161120/images/medium/10.1177_0956797611417632-fig1.gif"/>
+</a>
+
+[[@simmons_false-positive_2011]](http://doi.org/10.1177/0956797611417632)
+</div>
+
+## Errors/omissions in data
+
+- C. Reinhart and K. Rogoff paper, <http://www.nber.org/papers/w15639.pdf?new_window=1>
+    - Omitted data in Excel spreadsheet used to model effect of public debt on econcomic growth. <https://www.bloomberg.com/news/articles/2013-04-18/faq-reinhart-rogoff-and-the-excel-error-that-changed-history>
+    - Error only found **when data were shared**.
+
 ## Reproducibility "Crisis"
 
 - [Reproducibility Project: Psychology](https://osf.io/ezcuj/)
@@ -201,31 +293,45 @@ sharing.dat %>%
 
 - Protocols not identical
     + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
-    + What is CI of *expected* effect sizes given sample/methodological variability? [Many Labs project](https://osf.io/wx7ck/wiki/home/)
-    
----
+    + What is CI of *expected* effect sizes given sample/methodological variability?
+- [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
 
+## [Many Labs project](https://osf.io/wx7ck/wiki/home/)
+    
 <div class="centered">
 <img src="https://mfr.osf.io/export?url=https://osf.io/5mxby/?action=download%26direct%26mode=render&initialWidth=828&childId=mfrIframe&format=1200x1200.jpeg">
 
-[Many Labs project](https://osf.io/wx7ck/wiki/home/)
-</div>
+## Reproducibility in psychology
 
-## So, did the studies replicate? [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
-    
-[[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
+- Differences by subfield
+- Five stages of data sharing
+
+## 
 
 # Reproducibility in Neuroscience
 
----
+## Levels of spatial and temporal analysis
+
+<div class="centered"
+<a href="http://doi.org/10.1038/nrn1536">
+<img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/grinvald-nrn1536-f7.jpg" height=500px>
+</a>
+</div>
+
+## Underpowered studies
+
+## Risks of false positives
+
+## Computationally intensive
 
 # Toward a better future
 
 ## Tools for openness and transparency
 
-- Open Science Framework (OSF)
+- [Open Science Framework (OSF)](https://osf.io/)
     - Reproducibility Project
     - Pre-registration Challenges
+    - Pre-print services
     
 ## Changing journal, funder practices
 
@@ -247,16 +353,58 @@ sharing.dat %>%
     - [Jupyter](http://jupyter.org) notebooks
     - Electronic lab notebooks, talks, reports, articles...
 - [Software Carpentry](https://software-carpentry.org/)
-- Version control (e.g., GitHub)
+- Version control (e.g., [GitHub](http://github.com))
+- [PSY 511 Spring 2017](http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/)
 
 ## Data publication
 
-- Nature Scientific Data
+- *Nature Scientific Data*
     - Gilmore on editorial board
+- [Inter-university Consortium for Political and Social Research (ICPSR)](http://www.icpsr.umich.edu)
+- [Dataverse](http://dataverse.org)
+- [Dryad Data Repository](http://datadryad.org)
 
-## Video can improve reproducibility
+## [Databrary.org](http://databrary.org)
 
-*If extreme athletes can use self-mounted cameras to record their wildest adventures during mountaintop blizzards, scientists have little excuse not to record what goes on in lab and field studies."* -- [Clark, T.D. (2017, February 7). Science, lies, and video-taped experiments. *Nature*, *542*(7640).](http://www.nature.com/news/science-lies-and-video-taped-experiments-1.21432)
+<div class="centered">
+<img src="img/databrary.splash.jpg">
+</div>
+
+## [Databrary.org](http://databrary.org)
+
+- Specializes in storing, sharing video
+- Video captures behavior unlike other methods, but is *identifiable*
+- Policy framework for sharing identifiable data
+    + **Permission to share** -> builds on informed consent
+    + **Restricted access** for (institutionally) authorized researchers
+- **Datavyu**, free, open-source video coding tool
+    
+---
+
+<div class="centered">
+<img src="img/databrary-datavyu-data-types-v2.png">
+</div>
+
+---
+
+<div class="centered">
+<img src="img/databrary-auth-inst-map.jpg">
+</div>
+
+---
+
+<div class="centered">
+<img src="img/nat-hum-beh.jpg">
+</div>
+
+---
+
+<div class="centered">
+<img src="img/aquarium-project.jpg">
+
+<http://klavinslab.org/aquarium-about.html>
+</div>
+
 
 ## Toward a databservatory...
 
@@ -331,11 +479,47 @@ Your browser does not support the video tag.
 </video>
 </div>
 
+## My vision of our open science future...
+
+- All data, materials, code shared
+    + when paper goes to press or at end of grant period
+- Shared in repositories that encourage data linkage (w/ permission)
+    + People, places, times, tasks, behaviors, ...
+    
+---
+
+<div class="centered">
+<img src="img/bricks-mortar.png">
+</div>
+
+---
+
+- Commonplace citations of data, materials, code, findings
+- Ecosystems for new discovery
+    + Breaking down silos
+    + See the whole elephant
+
+---
+
+<div class="centered">
+<img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAW9AAAAJDRhMTc5OGYyLWE4MzItNDNlOS1hMDJjLTllOGU2ZTNiNmMzNg.jpg" height=450px>
+</div>
+
+---
+
+<div class="centered">
+<img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=450px>
+</div>
+
+## What's your vision?
+
 # Thank you & good luck this week
 
 ## Stack
 
-This talk was produced in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the reveal.JS framework. The code used to generate the slides may be found at <https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/>. Information about the R Session that produced the code is as follows:
+This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the reveal.JS framework. 
+The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/>. 
+Information about the R Session that produced the code is as follows:
 
 ```{r session-info}
 sessionInfo()
@@ -343,4 +527,6 @@ sessionInfo()
 
 ## References
 
+Van Paemel. *American Psychologist*, *70*(6), Sept 2015
 
+Wicherts, J. M., Borsboom, D., Kats, J., & Molenaar, D. (2006). The poor availability of psychological research data for reanalysis. American Psychologist, 61(7), 726–728. https://doi.org/10.1037/0003-066X.61.7.726
