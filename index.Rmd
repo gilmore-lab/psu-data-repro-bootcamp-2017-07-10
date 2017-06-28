@@ -3,7 +3,8 @@ title: "The Reproducibility Crisis in Psychology & Neuroscience"
 author: "Rick O. Gilmore"
 email: rogilmore@psu.edu
 date: "`r Sys.time()`"
-output: 
+bibliography: bib/psu-repro.bib
+output:
   revealjs::revealjs_presentation:
     self_contained: false
     lib_dir: libs
@@ -12,7 +13,8 @@ output:
     transition: default
     reveal_options:
       slideNumber: true
-      previewLinks: true
+      previewLinks: false
+      center: false
 ---
 
 ```{r setup, include=FALSE}
@@ -50,10 +52,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Is there a reproducibility crisis?
 
->- Yes, a significant crisis.
->- Yes, a slight crisis.
->- No, there is no crisis.
->- Don't know.
+- Yes, a significant crisis.
+- Yes, a slight crisis.
+- No, there is no crisis.
+- Don't know.
 
 ---
 
@@ -67,8 +69,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Have you ever failed to reproduce an experiment?
 
->- Someone else's
->- My own
+- Someone else's
+- My own
 
 ---
 
@@ -83,8 +85,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Have you ever tried to publish a reproduction attempt?
 
->- Published
->- Failed to publish
+- Published
+- Failed to publish
 
 ---
 
@@ -162,8 +164,8 @@ Your browser does not support the video tag.
 </video>
 </div>
 
-<div class="smaller">Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2016). PLAY Project: Webinar discussions on protocol and coding. Databrary. Retrieved February 17, 2017 from <https://nyu.databrary.org/volume/232>
-</div>
+<small>Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2016). PLAY Project: Webinar discussions on protocol and coding. Databrary. Retrieved February 17, 2017 from <https://nyu.databrary.org/volume/232>
+</small>
 
 ## Data are sensitive, hard(er) to share
 
@@ -173,14 +175,17 @@ Your browser does not support the video tag.
 ## Sampling is biased
 
 - Much (lab-based) data collected are from **W**estern, **E**ducated **I**ndustrialized, **R**ich, **D**emocratic (WEIRD) populations [[@henrich_weirdest_2010]](http://doi.org/10.1017/S0140525X0999152X)
-- Even on [Mechanical Turk](http://www.behind-the-enemy-lines.com/2015/04/demographics-of-mechanical-turk-now.html)
 
----
+## Even on [Mechanical Turk](http://www.behind-the-enemy-lines.com/2015/04/demographics-of-mechanical-turk-now.html)
 
 <div class="centered">
-<img src="http://2.bp.blogspot.com/-oHtEYvTo2yg/VSLSom0-ceI/AAAAAAADQcM/CWV-eGqvLhw/s1600/hh-income.PNG">
+<img src="http://2.bp.blogspot.com/-oHtEYvTo2yg/VSLSom0-ceI/AAAAAAADQcM/CWV-eGqvLhw/s1600/hh-income.PNG" height=400px>
+</div>
 
-<img src="http://2.bp.blogspot.com/--0AEM5IEPLo/VSLSohy8qtI/AAAAAAADQcI/UErSy-VIvk0/s1600/countries.PNG">
+----
+
+<div class="centered">
+<img src="http://2.bp.blogspot.com/--0AEM5IEPLo/VSLSohy8qtI/AAAAAAADQcI/UErSy-VIvk0/s1600/countries.PNG" height=400px>
 
 See also: <http://demographics.mturk-tracker.com/>
 </div>
@@ -198,7 +203,9 @@ See also: <http://demographics.mturk-tracker.com/>
 ---
 
 <div class="centered">
-<img src="img/wicherts_2006_amp_61_7_726_fig1a.jpg" height=550px>
+<img src="img/wicherts_2006_amp_61_7_726_fig1a.jpg" height=500px>
+
+[[@wicherts_poor_2006]](http://doi.org/10.1037/0003-066X.61.7.726)
 </div>
 
 ## & hasn't improved much...
@@ -217,8 +224,6 @@ sharing.dat %>%
 ```
 
 [[@vanpaemel_are_2015]](http://doi.org/10.1525/collabra.13)
-
-*American Psychologist*, *70*(6), Sept 2015
 </div>
 
 ## Fraud
@@ -226,18 +231,24 @@ sharing.dat %>%
 <div class="centered">
 <a href="http://science.sciencemag.org/content/348/6239/1100.2">
 <img src="img/lacour-green.jpg" height=450px/>
+</a>
 
-[Michael LaCour](http://www.nature.com/news/political-science-s-problem-with-research-ethics-1.17866)
+[[@lacour_when_2014]](http://doi.org/10.1126/science.1256151)
+</div>
+
+---
+
+<div class="centered">
+<a href="http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf">
+<img src="img/flawed-science-stapel.jpg" height=500px>
 </a>
 </div>
 
-## Diederik Stapel
+---
 
-- Dean of the School of Social and Behavioral Sciences at Tilburg University
-- Teacher of Scientific Ethics course
+- Stapel was Dean of the School of Social and Behavioral Sciences at Tilburg University, teacher of Scientific Ethics course
 - Fraud investigation launched when 3 grad students noticed anomalies -- duplicate entries in data tables
 - Stapel confessed, lost position, gave up Ph.D., wrote a book
-- Details in [Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
 
 ## Self-reported data fabrication, falsification, and alteration
 
@@ -278,7 +289,7 @@ sharing.dat %>%
 ## Errors/omissions in data
 
 - C. Reinhart and K. Rogoff paper, <http://www.nber.org/papers/w15639.pdf?new_window=1>
-    - Omitted data in Excel spreadsheet used to model effect of public debt on econcomic growth. <https://www.bloomberg.com/news/articles/2013-04-18/faq-reinhart-rogoff-and-the-excel-error-that-changed-history>
+    - Omitted data in Excel spreadsheet used to model effect of public debt on economic growth. <https://www.bloomberg.com/news/articles/2013-04-18/faq-reinhart-rogoff-and-the-excel-error-that-changed-history>
     - Error only found **when data were shared**.
 
 ## Reproducibility "Crisis"
@@ -300,16 +311,13 @@ sharing.dat %>%
 [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
 </div>
 
-## So, did the studies replicate? [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+## So, did the studies replicate? 
 
 - Samples not equal
     + Sampling error differences predicts < 100% reproducibility
-
-## So, did the studies replicate? [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
-
 - Protocols not identical
     + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
-    + What is CI of *expected* effect sizes given sample/methodological variability?
+- [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
 - [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
 
 ## [Many Labs project](https://osf.io/wx7ck/wiki/home/)
@@ -317,19 +325,16 @@ sharing.dat %>%
 <div class="centered">
 <img src="https://mfr.osf.io/export?url=https://osf.io/5mxby/?action=download%26direct%26mode=render&initialWidth=828&childId=mfrIframe&format=1200x1200.jpeg">
 
-## Reproducibility in psychology
-
-- Differences by subfield
-- Five stages of data sharing
-
 # Reproducibility in Neuroscience
 
-## Levels of spatial and temporal analysis
+----
 
 <div class="centered"
 <a href="http://doi.org/10.1038/nrn1536">
 <img src="https://raw.githubusercontent.com/gilmore-lab/psu-child-study-ctr-talk-2016-10-28/master/img/grinvald-nrn1536-f7.jpg" height=500px>
 </a>
+
+[[@Grinvald2004-bg]](http://dx.doi.org/10.1038/nrn1536)
 </div>
 
 ## Underpowered studies
@@ -342,6 +347,8 @@ sharing.dat %>%
 
 <div class="centered">
 <img src="img/button-etal-2012-fig3.jpg" height=500px>
+
+[[@Button2013-ox]](http://doi.org/10.1038/nrn3475)
 </div>
 
 ---
@@ -350,6 +357,8 @@ sharing.dat %>%
 <a href="http://dx.doi.org/10.1038/nrn.2016.167">
 <img src="img/poldrack-et-al-nrn-2017-fig1.jpg" height=500px>
 </a>
+
+[[@Poldrack2017-xc]](http://doi.org/10.1038/nrn.2016.167)
 </div>
 
 ---
@@ -358,8 +367,9 @@ sharing.dat %>%
 <a href="http://doi.org/10.1371/journal.pbio.2000797.g003">
 <img src="img/szucs-ioannidis-title.jpg">
 </a>
-</div>
 
+[[@szucs_empirical_2016]](http://doi.org/10.1101/071530)
+</div>
 
 ---
 
@@ -384,12 +394,22 @@ sharing.dat %>%
 <a href="http://dx.doi.org/10.1038/nrn.2016.167">
 <img src="img/poldrack-et-al-nrn-2017-box3.jpg" height=500px>
 </a>
+
+[[@Poldrack2017-xc]](http://doi.org/10.1038/nrn.2016.167)
 </div>
 
 ---
 
 <div class="centered">
 <img src="http://i.imgur.com/ula3w.jpg" height=550px>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/progress-title.jpg" height=550px>
+
+[[@Gilmore2017-qi]](http://doi.org/10.1111/nyas.13325)
 </div>
 
 # Toward a better future
@@ -409,9 +429,18 @@ sharing.dat %>%
 ---
 
 <div class="centered">
+<img src="img/manifesto-cover.jpg" height=500px>
+
+[[@munafo_manifesto_2017]](http://doi.org/10.1038/s41562-016-0021)
+</div>
+---
+
+<div class="centered">
 <a href="http://www.nature.com/articles/s41562-016-0021/figures/1">
 <img src="http://www.nature.com/article-assets/npg/nathumbehav/2017/s41562-016-0021/images_hires/w926/s41562-016-0021-f1.jpg" height=500px>
 </a>
+
+[[@munafo_manifesto_2017]](http://doi.org/10.1038/s41562-016-0021)
 </div>
 
 ## Improving methodology training
@@ -476,7 +505,9 @@ sharing.dat %>%
 ---
 
 <div class="centered">
-<img src="img/nat-hum-beh.jpg">
+<img src="img/nat-hum-beh.jpg" height=500px>
+
+[[@GilmoreAdolph2017]](http://doi.org/10.1038/s41562-017-0128)
 </div>
 
 ---
@@ -577,7 +608,7 @@ Your browser does not support the video tag.
 ---
 
 <div class="centered">
-<img src="img/bricks-mortar.png">
+<img src="img/bricks-mortar.png" height=550px>
 </div>
 
 ---
@@ -611,10 +642,4 @@ Information about the R Session that produced the code is as follows:
 sessionInfo()
 ```
 
-## References
-
-[Bennett, C.M., Baird, A.A., Miller, M.B., & Wolford, G.L. (2009). Neural correlates of interspecies perspective taking in the post-mortem Atlantic Salmon: An argument for multiple comparisons correction. Poster presented at the Organization for Human Brain Mapping.](http://prefrontal.org/files/posters/Bennett-Salmon-2009.pdf)
-
-Van Paemel. *American Psychologist*, *70*(6), Sept 2015
-
-Wicherts, J. M., Borsboom, D., Kats, J., & Molenaar, D. (2006). The poor availability of psychological research data for reanalysis. American Psychologist, 61(7), 726–728. https://doi.org/10.1037/0003-066X.61.7.726
+## References {.smaller}
