@@ -44,7 +44,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - There's something happening here; what it is ain't exactly clear...
 - Reproducibility in Psychology
 - Reproducibility in Neuroscience
-- A better future
+- Toward a better future
 
 # Pop quiz
 
@@ -59,7 +59,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class="centered">
 <a href="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=450px>
-<img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=450px>
+<img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=550px>
 </a>
 
 [[@baker_1500_2016]](http://doi.org/10.1038/533452a)
@@ -70,6 +70,17 @@ knitr::opts_chunk$set(echo = FALSE)
 >- Someone else's
 >- My own
 
+---
+
+<div class="centered">
+<a href="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
+<img src="img/failed-to-reproduce.png" height=550px>
+</a>
+
+[[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+
 ## Have you ever tried to publish a reproduction attempt?
 
 >- Published
@@ -79,7 +90,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class="centered">
 <a href="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
-<img src="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg">
+<img src="img/tried-to-publish-repro.png" height=550px>
 </a>
 
 [[@baker_1500_2016]](http://doi.org/10.1038/533452a)
@@ -91,7 +102,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class="centered">
 <a href="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg">
-<img src="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg">
+<img src="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg" height=600px>
 </a>
 
 [[@baker_1500_2016]](http://doi.org/10.1038/533452a)
@@ -114,7 +125,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ---
 
 <div class="centered">
-<a href="https://www.amazon.com/Rigor-Mortis-Science-Worthless-Billions/dp/0465097901"><img src="https://images-na.ssl-images-amazon.com/images/I/51PjoYQf1jL._SX327_BO1,204,203,200_.jpg">
+<a href="https://www.amazon.com/Rigor-Mortis-Science-Worthless-Billions/dp/0465097901"><img src="https://images-na.ssl-images-amazon.com/images/I/51PjoYQf1jL._SX327_BO1,204,203,200_.jpg" height=650px>
 </a>
 </div>
 
@@ -151,7 +162,13 @@ Your browser does not support the video tag.
 </video>
 </div>
 
-Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2016). PLAY Project: Webinar discussions on protocol and coding. Databrary. Retrieved February 17, 2017 from <https://nyu.databrary.org/volume/232>
+<div class="smaller">Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2016). PLAY Project: Webinar discussions on protocol and coding. Databrary. Retrieved February 17, 2017 from <https://nyu.databrary.org/volume/232>
+</div>
+
+## Data are sensitive, hard(er) to share
+
+- Protect participant's identities
+- Protect from harm/embarrassment
 
 ## Sampling is biased
 
@@ -178,7 +195,13 @@ See also: <http://demographics.mturk-tracker.com/>
 - Even **after** a publication has gone to press
 - Despite implicit agreement to do so if publishing in certain journals (e.g., American Psychological Association)
 
-## & hasn't improved over time...
+---
+
+<div class="centered">
+<img src="img/wicherts_2006_amp_61_7_726_fig1a.jpg" height=550px>
+</div>
+
+## & hasn't improved much...
 
 <div class="centered">
 ```{r vanpaemel-et-al-data, echo=FALSE, warning=FALSE, message=FALSE}
@@ -198,20 +221,13 @@ sharing.dat %>%
 *American Psychologist*, *70*(6), Sept 2015
 </div>
 
-## Data are sensitive, hard(er) to share
-
 ## Fraud
-
-- [Michael LaCour](http://www.nature.com/news/political-science-s-problem-with-research-ethics-1.17866)
-    - Broockman, D., Kalla, J., Aronow, P. (2015, May 19). Irregularities in LaCour (2014). Retrieved February 16, 2017 from <http://stanford.edu/~dbroock/broockman_kalla_aronow_lg_irregularities.pdf>
-- [Diederik Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
-    - [Commentary](http://root.bryancavemedia.com/marketing/downloads/schooled_in_fraud_compliance_lessons_from_lying_dutchman_killingsworth.pdf)
-    
-## Michael LaCour
 
 <div class="centered">
 <a href="http://science.sciencemag.org/content/348/6239/1100.2">
 <img src="img/lacour-green.jpg" height=450px/>
+
+[Michael LaCour](http://www.nature.com/news/political-science-s-problem-with-research-ethics-1.17866)
 </a>
 </div>
 
@@ -306,8 +322,6 @@ sharing.dat %>%
 - Differences by subfield
 - Five stages of data sharing
 
-## 
-
 # Reproducibility in Neuroscience
 
 ## Levels of spatial and temporal analysis
@@ -320,9 +334,63 @@ sharing.dat %>%
 
 ## Underpowered studies
 
+<div class="centered">
+<img src="img/button-etal-title.jpg" height=500px>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/button-etal-2012-fig3.jpg" height=500px>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1038/nrn.2016.167">
+<img src="img/poldrack-et-al-nrn-2017-fig1.jpg" height=500px>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://doi.org/10.1371/journal.pbio.2000797.g003">
+<img src="img/szucs-ioannidis-title.jpg">
+</a>
+</div>
+
+
+---
+
+<div class="centered">
+<a href="http://doi.org/10.1371/journal.pbio.2000797.g003">
+<img src="img/szucs-ioannidis-2016-fig3.jpg" height=550px>
+</a>
+</div>
+
 ## Risks of false positives
 
-## Computationally intensive
+<div class="centered">
+<a href="http://prefrontal.org/files/posters/Bennett-Salmon-2009.pdf">
+<img src="img/bennett-etal-2009-title.jpg" height=150px/>
+</a>
+<img src="img/bennett-etal-bold-data.jpg" height=350px>
+</div>
+
+## Multiple computational pathways
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1038/nrn.2016.167">
+<img src="img/poldrack-et-al-nrn-2017-box3.jpg" height=500px>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<img src="http://i.imgur.com/ula3w.jpg" height=550px>
+</div>
 
 # Toward a better future
 
@@ -338,7 +406,7 @@ sharing.dat %>%
 - [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/)
 - [[@nosek_promoting_2015]](http://doi.org/10.1126/science.aab2374)
 
-## [[@munafo_manifesto_2017]](http://doi.org/10.1038/s41562-016-0021) manifesto
+---
 
 <div class="centered">
 <a href="http://www.nature.com/articles/s41562-016-0021/figures/1">
@@ -358,11 +426,25 @@ sharing.dat %>%
 
 ## Data publication
 
-- *Nature Scientific Data*
-    - Gilmore on editorial board
 - [Inter-university Consortium for Political and Social Research (ICPSR)](http://www.icpsr.umich.edu)
 - [Dataverse](http://dataverse.org)
 - [Dryad Data Repository](http://datadryad.org)
+
+---
+
+<div class="centered">
+<a href="https://www.nature.com/sdata/">
+<img src="img/nature.scientific.data.jpg" height=500px>
+</a>
+</div>
+
+## [OpenNeuro.org](http://openneuro.org)
+
+<div class="centered">
+<a href="http://openneuro.org">
+<img src="img/openneuro.org.jpg" height=500px>
+</a>
+</div>
 
 ## [Databrary.org](http://databrary.org)
 
@@ -479,13 +561,19 @@ Your browser does not support the video tag.
 </video>
 </div>
 
-## My vision of our open science future...
+## [Allen Brain Atlas](http://www.brain-map.org/)
+
+<div class="centered">
+<img src="img/allen-brain-atlas.jpg" height=500>
+</div>
+
+## A vision of our open science future...
 
 - All data, materials, code shared
     + when paper goes to press or at end of grant period
 - Shared in repositories that encourage data linkage (w/ permission)
     + People, places, times, tasks, behaviors, ...
-    
+ 
 ---
 
 <div class="centered">
@@ -496,8 +584,6 @@ Your browser does not support the video tag.
 
 - Commonplace citations of data, materials, code, findings
 - Ecosystems for new discovery
-    + Breaking down silos
-    + See the whole elephant
 
 ---
 
@@ -526,6 +612,8 @@ sessionInfo()
 ```
 
 ## References
+
+[Bennett, C.M., Baird, A.A., Miller, M.B., & Wolford, G.L. (2009). Neural correlates of interspecies perspective taking in the post-mortem Atlantic Salmon: An argument for multiple comparisons correction. Poster presented at the Organization for Human Brain Mapping.](http://prefrontal.org/files/posters/Bennett-Salmon-2009.pdf)
 
 Van Paemel. *American Psychologist*, *70*(6), Sept 2015
 
