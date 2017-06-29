@@ -12,7 +12,7 @@
 
 
 
-<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/serif.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -451,9 +451,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section>
     <h1 class="title">The Reproducibility Crisis in Psychology &amp; Neuroscience</h1>
     <h2 class="author">Rick O. Gilmore</h2>
-    <h3 class="date">2017-06-28 14:48:43</h3>
+    <h3 class="date">2017-06-29 08:56:11</h3>
 </section>
 
+<section class="slide level2">
+
+<!-- For more info about appearance and style parameters: -->
+<!-- http://rmarkdown.rstudio.com/revealjs_presentation_format.html#appearance_and_style -->
+</section>
 <section><section id="preliminaries" class="titleslide slide level1"><h1>Preliminaries</h1></section><section id="bio" class="slide level2">
 <h1>Bio</h1>
 <ul>
@@ -468,10 +473,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section><section id="acknowledgments" class="slide level2">
 <h1>Acknowledgments</h1>
 <ul>
-<li><a href="">Karen Adolph (NYU)</a></li>
+<li><a href="http://psych.nyu.edu/adolph/">Karen Adolph (NYU)</a></li>
 <li>LEGO Foundation, Society for Research in Child Development</li>
 </ul>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" width=150px> <img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" width=150px></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=250px> <img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=250px></p>
+<aside class="notes">
+<p>I want to thank my colleague Karen Adolph and support from LEGO Foundation, SRCD, NSF, and NIH.</p>
+<p>So, where are we going.</p>
+</aside>
 </section><section id="roadmap" class="slide level2">
 <h1>Roadmap</h1>
 <ul>
@@ -480,6 +489,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Reproducibility in Neuroscience</li>
 <li>Toward a better future</li>
 </ul>
+<aside class="notes">
+<p>I want to start by setting the stage. The open science movement is real and happening. But as this workshop attests, even though I will talk about my home fields of psychology and neuroscience, it’s not just these fields. Finally, I’ll wrap up with some thoughts about the real progress we’re making, largely due to changes in technology and beahvior.</p>
+</aside>
 </section></section>
 <section><section id="pop-quiz" class="titleslide slide level1"><h1>Pop quiz</h1></section><section id="is-there-a-reproducibility-crisis" class="slide level2">
 <h1>Is there a reproducibility crisis?</h1>
@@ -489,12 +501,18 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>No, there is no crisis.</li>
 <li>Don’t know.</li>
 </ul>
+<aside class="notes">
+<p>Could I see a show of hands from those who say there is a significant reproducibility crisis? A ‘slight’ crisis? No crisis? Don’t know.</p>
+</aside>
 </section><section class="slide level2">
 
 <div class="centered">
 <p><a href="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=450px> <img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=550px> </a></p>
 <p><a href="http://doi.org/10.1038/533452a"><span class="citation" data-cites="baker_1500_2016">(M. Baker 2016)</span></a></p>
 </div>
+<aside class="notes">
+<p>Here are the results from a survey published last year in Nature.</p>
+</aside>
 </section><section id="have-you-ever-failed-to-reproduce-an-experiment" class="slide level2">
 <h1>Have you ever failed to reproduce an experiment?</h1>
 <ul>
@@ -521,12 +539,19 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </div>
 </section><section id="what-factors-contribute-to-irreproducible-research" class="slide level2">
 <h1>What factors contribute to irreproducible research?</h1>
+<div class="notes">
+Now it’s your turn. What factors contribute to irreproducible research?
+<div>
+
 </section><section class="slide level2">
 
 <div class="centered">
 <p><a href="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg"> <img src="http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg" height=600px> </a></p>
 <p><a href="http://doi.org/10.1038/533452a"><span class="citation" data-cites="baker_1500_2016">(M. Baker 2016)</span></a></p>
 </div>
+<aside class="notes">
+<p>Here are the data from the Nature survey.</p>
+</aside>
 </section><section id="solvable-problems" class="slide level2">
 <h1>Solvable problems</h1>
 <ul>
@@ -542,11 +567,17 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Variability of reagents</li>
 <li><em>Bad luck</em></li>
 </ul>
+<aside class="notes">
+<p>I suggest that <strong>most</strong> of these are problems we can solve.</p>
+</aside>
 </section><section class="slide level2">
 
 <div class="centered">
 <p><a href="https://www.amazon.com/Rigor-Mortis-Science-Worthless-Billions/dp/0465097901"><img src="https://images-na.ssl-images-amazon.com/images/I/51PjoYQf1jL._SX327_BO1,204,203,200_.jpg" height=650px> </a></p>
 </div>
+<aside class="notes">
+<p>And we better get to work…fast.</p>
+</aside>
 </section></section>
 <section><section id="reproducibility-in-psychology" class="titleslide slide level1"><h1>Reproducibility in Psychology</h1></section><section class="slide level2">
 
@@ -671,6 +702,15 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Error only found <strong>when data were shared</strong>.</li>
 </ul></li>
 </ul>
+</section><section id="a-series-of-unfortunate-events" class="slide level2">
+<h1>A series of unfortunate events…</h1>
+<blockquote>
+<p><em>This article reports 9 experiments, involving more than 1,000 participants, that test for retroactive influence by “time-reversing” well-established psychological effects so that the individual’s responses are obtained before the putatively causal stimulus events occur.</em></p>
+</blockquote>
+<p><a href="10.1037/a0021524"><span class="citation" data-cites="Bem2011-kl">(Bem 2011)</span></a></p>
+<aside class="notes">
+<p>And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Extrasensory Perception or precognition. Psychology is harder than physics, but it doesn’t supercede it. This paper as blogger Tal Yarkoni <a href="http://www.talyarkoni.org/blog/2011/01/10/the-psychology-of-parapsychology-or-why-good-researchers-publishing-good-articles-in-good-journals-can-still-get-it-totally-wrong/">notes</a> shows the perils of using standard, but flawed research practices.</p>
+</aside>
 </section><section id="reproducibility-crisis" class="slide level2">
 <h1>Reproducibility “Crisis”</h1>
 <ul>
@@ -701,7 +741,6 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li>Only 69% of original PIs “endorsed” replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.</li>
 </ul></li>
-<li><a href="http://doi.org/10.1126/science.aad7243"><span class="citation" data-cites="gilbert_comment_2016">(Gilbert et al. 2016)</span></a></li>
 <li><a href="http://doi.org/10.1126/science.aac4716"><span class="citation" data-cites="collaboration_estimating_2015">(Collaboration 2015)</span></a> <em>“…seriously underestimated reproducibility of psychological science.”</em></li>
 </ul>
 </section><section id="many-labs-project" class="slide level2">
@@ -748,8 +787,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <div class="centered">
 <p><a href="http://prefrontal.org/files/posters/Bennett-Salmon-2009.pdf"> <img src="img/bennett-etal-2009-title.jpg" height=150px/> </a> <img src="img/bennett-etal-bold-data.jpg" height=350px></p>
 </div>
-</section><section id="multiple-computational-pathways" class="slide level2">
-<h1>Multiple computational pathways</h1>
+</section><section id="multiple-69k-computational-pathways" class="slide level2">
+<h1>Multiple (&gt; 69K) computational pathways</h1>
 <div class="centered">
 <p><a href="http://dx.doi.org/10.1038/nrn.2016.167"> <img src="img/poldrack-et-al-nrn-2017-box3.jpg" height=500px> </a></p>
 <p><a href="http://doi.org/10.1038/nrn.2016.167"><span class="citation" data-cites="Poldrack2017-xc">(Poldrack et al. 2017)</span></a></p>
@@ -781,6 +820,17 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li><a href="https://osf.io/9f6gx/">Transparency and opennness promotion (TOP) guidelines</a></li>
 <li><a href="http://doi.org/10.1126/science.aab2374"><span class="citation" data-cites="nosek_promoting_2015">(B. A. Nosek et al. 2015)</span></a></li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Data, materials, code citation</li>
+<li>Data transparency</li>
+<li>Analytic methods (code) transparency</li>
+<li>Design and analysis transparency</li>
+<li>Preregistration of studies</li>
+<li>Preregistration of analysis plans</li>
+<li>Replication</li>
 </ul>
 </section><section class="slide level2">
 
@@ -960,7 +1010,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section></section>
 <section><section id="thank-you-good-luck-this-week" class="titleslide slide level1"><h1>Thank you &amp; good luck this week</h1></section><section id="stack" class="slide level2">
 <h1>Stack</h1>
-<p>This talk was produced on 2017-06-28 in <a href="http://rstudio.com">RStudio 1.0.143</a> using R Markdown and the reveal.JS framework. The code and materials used to generate the slides may be found at <a href="https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/" class="uri">https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/</a>. Information about the R Session that produced the code is as follows:</p>
+<p>This talk was produced on 2017-06-29 in <a href="http://rstudio.com">RStudio 1.0.143</a> using R Markdown and the reveal.JS framework. The code and materials used to generate the slides may be found at <a href="https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/" class="uri">https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/</a>. Information about the R Session that produced the code is as follows:</p>
 <pre><code>## R version 3.4.0 (2017-04-21)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
 ## Running under: macOS Sierra 10.12.5
@@ -986,11 +1036,27 @@ document.getElementsByTagName('head')[0].appendChild(style);
 ## [17] rprojroot_1.2    digest_0.6.12    assertthat_0.2.0 tibble_1.3.0    
 ## [21] evaluate_0.10    rmarkdown_1.5    labeling_0.3     stringi_1.1.5   
 ## [25] compiler_3.4.0   scales_0.4.1     backports_1.0.5</code></pre>
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
 </section><section id="references" class="slide level2 unnumbered smaller">
 <h1>References</h1>
 <div id="refs" class="references">
 <div id="ref-baker_1500_2016">
 <p>Baker, Monya. 2016. “1,500 Scientists Lift the Lid on Reproducibility.” <em>Nature News</em> 533 (7604): 452. doi:<a href="https://doi.org/10.1038/533452a">10.1038/533452a</a>.</p>
+</div>
+<div id="ref-Bem2011-kl">
+<p>Bem, Daryl J. 2011. “Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences on Cognition and Affect.” <em>J. Pers. Soc. Psychol.</em> 100 (3): 407–25. doi:<a href="https://doi.org/10.1037/a0021524">10.1037/a0021524</a>.</p>
 </div>
 <div id="ref-Button2013-ox">
 <p>Button, Katherine S, John P A Ioannidis, Claire Mokrysz, Brian A Nosek, Jonathan Flint, Emma S J Robinson, and Marcus R Munafò. 2013. “Power Failure: Why Small Sample Size Undermines the Reliability of Neuroscience.” <em>Nat. Rev. Neurosci.</em> 14 (5): 365–76. doi:<a href="https://doi.org/10.1038/nrn3475">10.1038/nrn3475</a>.</p>
@@ -1000,9 +1066,6 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </div>
 <div id="ref-fanelli_how_2009">
 <p>Fanelli, Daniele. 2009. “How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data.” <em>PLOS ONE</em> 4 (5): e5738. doi:<a href="https://doi.org/10.1371/journal.pone.0005738">10.1371/journal.pone.0005738</a>.</p>
-</div>
-<div id="ref-gilbert_comment_2016">
-<p>Gilbert, Daniel T., Gary King, Stephen Pettigrew, and Timothy D. Wilson. 2016. “Comment on ‘Estimating the Reproducibility of Psychological Science’.” <em>Science</em> 351 (6277): 1037–7. doi:<a href="https://doi.org/10.1126/science.aad7243">10.1126/science.aad7243</a>.</p>
 </div>
 <div id="ref-GilmoreAdolph2017">
 <p>Gilmore, Rick O, and Karen E Adolph. 2017. “Video Can Make Behavioural Research More Reproducible.” <em>Nature Human Behavior</em> 1 (june). doi:<a href="https://doi.org/10.1038/s41562-017-0128">10.1038/s41562-017-0128</a>.</p>
@@ -1070,6 +1133,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
         // Optional reveal.js plugins
         dependencies: [
+          { src: 'libs/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
         ]
       });
     </script>

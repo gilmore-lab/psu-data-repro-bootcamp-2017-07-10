@@ -9,13 +9,17 @@ output:
     self_contained: false
     lib_dir: libs
     incremental: false
-    theme: simple
+    theme: serif
     transition: default
+    reveal_plugins: ["notes", "zoom"]
     reveal_options:
       slideNumber: true
       previewLinks: false
       center: false
 ---
+
+<!-- For more info about appearance and style parameters: -->
+<!-- http://rmarkdown.rstudio.com/revealjs_presentation_format.html#appearance_and_style -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -35,11 +39,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Acknowledgments
 
-- [Karen Adolph (NYU)]()
+- [Karen Adolph (NYU)](http://psych.nyu.edu/adolph/)
 - LEGO Foundation, Society for Research in Child Development
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" width=150px>
-<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" width=150px>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=250px>
+<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=250px>
+
+<div class="notes">
+I want to thank my colleague Karen Adolph and support from LEGO Foundation, SRCD, NSF, and NIH.
+
+So, where are we going.
+</div>
 
 ## Roadmap
 
@@ -48,7 +58,15 @@ knitr::opts_chunk$set(echo = FALSE)
 - Reproducibility in Neuroscience
 - Toward a better future
 
+<div class="notes">
+I want to start by setting the stage. The open science movement is real and happening. But as this workshop attests, even though I will talk about my home fields of psychology and neuroscience, it's not just these fields. Finally, I'll wrap up with some thoughts about the real progress we're making, largely due to changes in technology and beahvior. 
+</div>
+
 # Pop quiz
+
+<div class="notes">
+Let's start with a short quiz.
+</div>
 
 ## Is there a reproducibility crisis?
 
@@ -56,6 +74,10 @@ knitr::opts_chunk$set(echo = FALSE)
 - Yes, a slight crisis.
 - No, there is no crisis.
 - Don't know.
+
+<div class="notes">
+Could I see a show of hands from those who say there is a significant reproducibility crisis? A 'slight' crisis? No crisis? Don't know.
+</div>
 
 ---
 
@@ -65,6 +87,10 @@ knitr::opts_chunk$set(echo = FALSE)
 </a>
 
 [[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+<div class="notes">
+Here are the results from a survey published last year in Nature.
 </div>
 
 ## Have you ever failed to reproduce an experiment?
@@ -100,6 +126,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## What factors contribute to irreproducible research?
 
+<div class="notes">
+Now it's your turn. What factors contribute to irreproducible research?
+<div>
+
 ---
 
 <div class="centered">
@@ -108,6 +138,10 @@ knitr::opts_chunk$set(echo = FALSE)
 </a>
 
 [[@baker_1500_2016]](http://doi.org/10.1038/533452a)
+</div>
+
+<div class="notes">
+Here are the data from the Nature survey.
 </div>
 
 ## Solvable problems
@@ -124,11 +158,19 @@ knitr::opts_chunk$set(echo = FALSE)
 - Variability of reagents
 - *Bad luck*
 
+<div class="notes">
+I suggest that **most** of these are problems we can solve.
+</div>
+
 ---
 
 <div class="centered">
 <a href="https://www.amazon.com/Rigor-Mortis-Science-Worthless-Billions/dp/0465097901"><img src="https://images-na.ssl-images-amazon.com/images/I/51PjoYQf1jL._SX327_BO1,204,203,200_.jpg" height=650px>
 </a>
+</div>
+
+<div class="notes">
+And we better get to work...fast.
 </div>
 
 # Reproducibility in Psychology
@@ -291,6 +333,16 @@ sharing.dat %>%
 - C. Reinhart and K. Rogoff paper, <http://www.nber.org/papers/w15639.pdf?new_window=1>
     - Omitted data in Excel spreadsheet used to model effect of public debt on economic growth. <https://www.bloomberg.com/news/articles/2013-04-18/faq-reinhart-rogoff-and-the-excel-error-that-changed-history>
     - Error only found **when data were shared**.
+    
+## A series of unfortunate events...
+
+> *This article reports 9 experiments, involving more than 1,000 participants, that test for retroactive influence by "time-reversing" well-established psychological effects so that the individual's responses are obtained before the putatively causal stimulus events occur.* 
+
+[[@Bem2011-kl]](10.1037/a0021524)
+
+<div class="notes">
+And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Extrasensory Perception or precognition. Psychology is harder than physics, but it doesn't supercede it. This paper as blogger Tal Yarkoni [notes](http://www.talyarkoni.org/blog/2011/01/10/the-psychology-of-parapsychology-or-why-good-researchers-publishing-good-articles-in-good-journals-can-still-get-it-totally-wrong/) shows the perils of using standard, but flawed research practices. 
+</div>
 
 ## Reproducibility "Crisis"
 
@@ -317,7 +369,6 @@ sharing.dat %>%
     + Sampling error differences predicts < 100% reproducibility
 - Protocols not identical
     + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
-- [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
 - [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
 
 ## [Many Labs project](https://osf.io/wx7ck/wiki/home/)
@@ -388,7 +439,7 @@ sharing.dat %>%
 <img src="img/bennett-etal-bold-data.jpg" height=350px>
 </div>
 
-## Multiple computational pathways
+## Multiple (> 69K) computational pathways
 
 <div class="centered">
 <a href="http://dx.doi.org/10.1038/nrn.2016.167">
@@ -425,6 +476,16 @@ sharing.dat %>%
 
 - [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/)
 - [[@nosek_promoting_2015]](http://doi.org/10.1126/science.aab2374)
+
+---
+
+- Data, materials, code citation
+- Data transparency
+- Analytic methods (code) transparency
+- Design and analysis transparency
+- Preregistration of studies
+- Preregistration of analysis plans
+- Replication
 
 ---
 
@@ -641,5 +702,19 @@ Information about the R Session that produced the code is as follows:
 ```{r session-info}
 sessionInfo()
 ```
+
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
 
 ## References {.smaller}
