@@ -175,14 +175,6 @@ And we better get to work...fast.
 
 # Reproducibility in Psychology
 
----
-
-<div class="centered">
-<a href="http://press.princeton.edu/titles/10970.html">
-<img src="http://press.princeton.edu/images/j10970.gif" height=480px>
-</a>
-</div>
-
 ## Psychology is harder than physics
 
 ---
@@ -232,13 +224,23 @@ Your browser does not support the video tag.
 See also: <http://demographics.mturk-tracker.com/>
 </div>
 
-## Studies are underpowered
+---
 
-- Maxwell, S. E. (2004). The Persistence of Underpowered Studies in Psychological Research: Causes, Consequences, and Remedies. *Psychological Methods*, 9(2), 147–163. <https://doi.org/10.1037/1082-989X.9.2.147>
-- Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. *PLOS Medicine*, 2(8), e124. <https://doi.org/10.1371/journal.pmed.0020124>
+<div class="centered">
+<a href="http://press.princeton.edu/titles/10970.html">
+<img src="http://press.princeton.edu/images/j10970.gif" height=480px>
+</a>
+</div>
 
-## Data sharing is not universal practice
+## The sin of unreliability
 
+- Studies are underpowered [[@maxwell_persistence_2004]](10.1037/1082-989X.9.2.147) and [[@szucs_empirical_2016]](http://doi.org/10.1101/071530)
+- Direct replications rare, discouraged, hard to publish
+- Critical methodological details go unreported
+
+## The sin of data hoarding
+
+- Data sharing is not universal practice
 - Even **after** a publication has gone to press
 - Despite implicit agreement to do so if publishing in certain journals (e.g., American Psychological Association)
 
@@ -250,7 +252,7 @@ See also: <http://demographics.mturk-tracker.com/>
 [[@wicherts_poor_2006]](http://doi.org/10.1037/0003-066X.61.7.726)
 </div>
 
-## & hasn't improved much...
+## & hasn't improved since 2006
 
 <div class="centered">
 ```{r vanpaemel-et-al-data, echo=FALSE, warning=FALSE, message=FALSE}
@@ -268,7 +270,7 @@ sharing.dat %>%
 [[@vanpaemel_are_2015]](http://doi.org/10.1525/collabra.13)
 </div>
 
-## Fraud
+## The sin of corruptibility
 
 <div class="centered">
 <a href="http://science.sciencemag.org/content/348/6239/1100.2">
@@ -334,15 +336,21 @@ sharing.dat %>%
     - Omitted data in Excel spreadsheet used to model effect of public debt on economic growth. <https://www.bloomberg.com/news/articles/2013-04-18/faq-reinhart-rogoff-and-the-excel-error-that-changed-history>
     - Error only found **when data were shared**.
     
-## A series of unfortunate events...
+## The sin of bias...
 
-> *This article reports 9 experiments, involving more than 1,000 participants, that test for retroactive influence by "time-reversing" well-established psychological effects so that the individual's responses are obtained before the putatively causal stimulus events occur.* 
+> *"This article reports 9 experiments, involving more than 1,000 participants, that test for retroactive influence by "time-reversing" well-established psychological effects so that the individual's responses are obtained before the putatively causal stimulus events occur."* 
 
 [[@Bem2011-kl]](10.1037/a0021524)
 
 <div class="notes">
 And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Extrasensory Perception or precognition. Psychology is harder than physics, but it doesn't supercede it. This paper as blogger Tal Yarkoni [notes](http://www.talyarkoni.org/blog/2011/01/10/the-psychology-of-parapsychology-or-why-good-researchers-publishing-good-articles-in-good-journals-can-still-get-it-totally-wrong/) shows the perils of using standard, but flawed research practices. 
 </div>
+
+---
+
+>*"We argue that in order to convince a skeptical audience of a controversial claim, one needs to conduct strictly confirmatory studies and analyze the results with statistical tests that are conservative rather than liberal. We conclude that Bem's p values do not indicate evidence in favor of precognition; instead, they indicate that experimental psychologists need to change the way they conduct their experiments and analyze their data."*
+
+[[@Wagenmakers2011-yh]](http://doi.org/10.1037/a0022790)
 
 ## Reproducibility "Crisis"
 
@@ -371,10 +379,6 @@ And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Ex
     + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
 - [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
 
-## [Many Labs project](https://osf.io/wx7ck/wiki/home/)
-    
-<div class="centered">
-<img src="https://mfr.osf.io/export?url=https://osf.io/5mxby/?action=download%26direct%26mode=render&initialWidth=828&childId=mfrIframe&format=1200x1200.jpeg">
 
 # Reproducibility in Neuroscience
 
@@ -474,8 +478,7 @@ And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Ex
     
 ## Changing journal, funder practices
 
-- [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/)
-- [[@nosek_promoting_2015]](http://doi.org/10.1126/science.aab2374)
+- [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/), [[@nosek_promoting_2015]](http://doi.org/10.1126/science.aab2374)
 
 ---
 
@@ -494,6 +497,7 @@ And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Ex
 
 [[@munafo_manifesto_2017]](http://doi.org/10.1038/s41562-016-0021)
 </div>
+
 ---
 
 <div class="centered">
@@ -502,6 +506,12 @@ And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Ex
 </a>
 
 [[@munafo_manifesto_2017]](http://doi.org/10.1038/s41562-016-0021)
+</div>
+
+## Large-scale replication efforts
+
+<div class="centered">
+<img src="https://mfr.osf.io/export?url=https://osf.io/5mxby/?action=download%26direct%26mode=render&initialWidth=828&childId=mfrIframe&format=1200x1200.jpeg">
 </div>
 
 ## Improving methodology training
