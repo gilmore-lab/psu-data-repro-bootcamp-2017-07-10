@@ -512,6 +512,41 @@ And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Ex
 
 <div class="centered">
 <img src="https://mfr.osf.io/export?url=https://osf.io/5mxby/?action=download%26direct%26mode=render&initialWidth=828&childId=mfrIframe&format=1200x1200.jpeg">
+
+["Many Labs" Replication Project](https://osf.io/wx7ck/)
+</div>
+
+---
+
+<div class="centered">
+<img src="img/repro-project-cancer-bio.jpg">
+
+<https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology>
+<https://cos.io/rpcb/>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1038/541269a">
+<img src="img/cancer-repro-confusing-start-Nature.jpg">
+</a>
+
+[[@Baker2017-da]](http://dx.doi.org/10.1038/541269a)
+</div>
+
+---
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1371/journal.pbio.2002212">
+<img src="img/cancer-researchers-predict-repro.jpg">
+</a>
+
+[[@Benjamin2017-am]](http://dx.doi.org/10.1371/journal.pbio.2002212)
+</div>
+
+<div class="notes">
+And it turns out that many researchers don't accurately predict which studies will reproduce.
 </div>
 
 ## Improving methodology training
