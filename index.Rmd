@@ -34,8 +34,8 @@ knitr::opts_chunk$set(echo = FALSE)
 - Human brain development, perception & action, computational modeling, machine vision, big data, open science
 - founding Director of Human Imaging, [Penn State Social, Life & Engineering Sciences Imaging Center (SLEIC)](http://imaging.psu.edu)
 - Co-Founder/Co-Director of [Databrary.org](http://databrary.org) data library
-- banjo player, actor, cyclist, backpacker, poet, ham (K3ROG), native Coloradoan
 - [gilmore-lab.github.io](http://gilmore-lab.github.io)
+- banjo player, actor, cyclist, backpacker, poet, ham (K3ROG), native Coloradoan
 
 ## Acknowledgments
 
@@ -128,7 +128,7 @@ Here are the results from a survey published last year in Nature.
 
 <div class="notes">
 Now it's your turn. What factors contribute to irreproducible research?
-<div>
+</div>
 
 ---
 
@@ -240,7 +240,7 @@ See also: <http://demographics.mturk-tracker.com/>
 
 ## The sin of data hoarding
 
-- Data sharing is not universal practice
+- Data sharing is **not** universal practice
 - Even **after** a publication has gone to press
 - Despite implicit agreement to do so if publishing in certain journals (e.g., American Psychological Association)
 
@@ -314,8 +314,17 @@ sharing.dat %>%
 [[@fanelli_how_2009]](https://doi.org/10.1371/journal.pone.0005738)
 </div>
 
-## Marc Hauser
+---
 
+<div class="centered">
+<a href="http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes">
+<img src="img/hauser-misconduct-science.jpg" height=550px>
+</a>
+</div>
+
+--- 
+
+- Marc Hauser
 - Evolutionary/Comparative Psychologist, Professor at Harvard
 - Resigned 2011 after internal investigation found him responsible for research misconduct
 - Details see [2012 report by NIH Office of Research Integrity (ORI)](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html) and [Hauser's response](http://archive.boston.com/whitecoatnotes/2012/09/05/marc-hauser-responds-federal-finding-scientific-misconduct/spzRWEVIPKA4BUu8wi8t8J/story.html). 
@@ -338,7 +347,7 @@ sharing.dat %>%
     
 ## The sin of bias...
 
-> *"This article reports 9 experiments, involving more than 1,000 participants, that test for retroactive influence by "time-reversing" well-established psychological effects so that the individual's responses are obtained before the putatively causal stimulus events occur."* 
+>*"This article reports 9 experiments, involving more than 1,000 participants, that test for retroactive influence by "time-reversing" well-established psychological effects so that the individual's responses are obtained before the putatively causal stimulus events occur."*
 
 [[@Bem2011-kl]](10.1037/a0021524)
 
@@ -379,6 +388,11 @@ And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Ex
     + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
 - [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
 
+---
+
+<div class="centered">
+<img src="http://www.psych-net.com/pics/despair.jpg" height=550px>
+</div>
 
 # Reproducibility in Neuroscience
 
@@ -734,13 +748,19 @@ Your browser does not support the video tag.
 <img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=450px>
 </div>
 
+---
+
+<div class="centered">
+<img src="http://static.neatorama.com/images/2012-09/girl-hugging-elephant.jpg" height=450px>
+</div>
+
 ## What's your vision?
 
 # Thank you & good luck this week
 
 ## Stack
 
-This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the reveal.JS framework. 
+This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the reveal.JS framework. A BibTex format reference file can be found in [bib/psu-repro.bib](https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/blob/master/bib/psu-repro.bib)
 The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/psu-data-repro-bootcamp-2017-07-10/>. 
 Information about the R Session that produced the code is as follows:
 
