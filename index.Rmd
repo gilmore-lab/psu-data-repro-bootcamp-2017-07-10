@@ -394,6 +394,12 @@ And this 2011 paper by Daryl Bem from Cornell purporting to show evidence for Ex
 <img src="http://www.psych-net.com/pics/despair.jpg" height=550px>
 </div>
 
+---
+
+<div class="centered">
+<img src="img/vazire-nature.jpg" height=550px>
+</div>
+
 # Reproducibility in Neuroscience
 
 ----
