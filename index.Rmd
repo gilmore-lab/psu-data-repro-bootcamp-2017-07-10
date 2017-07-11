@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - B.A., Cognitive Science, Brown University
 - M.S. & Ph.D., Psychology (Cognitive Neuroscience), Carnegie Mellon University
 - Human brain development, perception & action, computational modeling, machine vision, big data, open science
-- founding Director of Human Imaging, [Penn State Social, Life & Engineering Sciences Imaging Center (SLEIC)](http://imaging.psu.edu)
+- Founding Director of Human Imaging, [Penn State Social, Life & Engineering Sciences Imaging Center (SLEIC)](http://imaging.psu.edu)
 - Co-Founder/Co-Director of [Databrary.org](http://databrary.org) data library
 - [gilmore-lab.github.io](http://gilmore-lab.github.io)
 - banjo player, actor, cyclist, backpacker, poet, ham (K3ROG), native Coloradoan
